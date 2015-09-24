@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "podtest"
+  s.name         = "study"
   s.version      = "0.2.0"
   s.summary      = "Asynchronous capable XCTestCase subclass"
 
@@ -38,8 +38,7 @@ Pod::Spec.new do |s|
   #  CocoaPods will detect a license file if there is a named LICENSE*
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
-
-  s.license      = "MIT (example)"
+  s.license      = { :type => 'BSD' }
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -93,6 +92,15 @@ Pod::Spec.new do |s|
   s.source_files  = "study/pod/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
+  # s.subspec 'UIKit' do |ss|
+  #   s.subspec.deployment_target = '6.0'
+  #   ss.ios.public_header_files = 'WTRequestCenter/UIKit+WTRequestCenter/*.h'
+  #   ss.dependency 'study'
+  #   ss.ios.source_files = 'study/UIKit+WTRequestCenter/*.{h,m}'
+  #   ss.osx.source_files = ''
+  #   end
+
+
   # s.public_header_files = "Classes/**/*.h"
 
 
@@ -116,7 +124,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
+  # s.frameworks  = 'UIKit'
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
