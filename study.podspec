@@ -19,16 +19,17 @@ Pod::Spec.new do |s|
   s.version      = "0.2.0"
   s.summary      = "Asynchronous capable XCTestCase subclass"
 
-  s.description  = <<-DESC
-                   A longer description of XCAsyncTestCase in Markdown format.
+  s.homepage     = "https://github.com/aluoshuai/podtest"
+  s.license      = { :type => 'MIT', :file => 'LICENSE.txt' }
+  s.authors      = { "罗帅" => "5793348@qq.com" }
+  
+  s.source       = { :git => "https://github.com/aluoshuai/podtest.git", :tag => "0.2.0" }
+  s.source_files  = 'study/pod/**/*.{h,m}'
 
-                   * Think: Why did you write this? What is the focus? What does it do?
-                   * CocoaPods will be using this to generate tags, and improve search results.
-                   * Try to keep it short, snappy and to the point.
-                   * Finally, don't worry about the indent, CocoaPods strips it!
-                   DESC
+  s.platform     = :ios
+  s.ios.deployment_target = '5.0'
+  s.requires_arc = true
 
-  s.homepage     = "https://github.com/aluoshuai/podtest/"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +39,7 @@ Pod::Spec.new do |s|
   #  CocoaPods will detect a license file if there is a named LICENSE*
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
-  s.license      = { :type => 'BSD' }
+  
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -52,7 +53,6 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "罗帅" => "5793348@qq.com" }
   # Or just: s.author    = "ChenYu Xiao"
   # s.authors            = { "ChenYu Xiao" => "apple.iiiyu@gmail.com" }
   # s.social_media_url   = "http://twitter.com/ChenYu Xiao"
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/aluoshuai/podtest.git", :branch => "master", :tag => "0.2.0" }
+  
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "study/pod/**/*.{h,m}"
+  
   # s.exclude_files = "Classes/Exclude"
 
   # s.subspec 'UIKit' do |ss|
