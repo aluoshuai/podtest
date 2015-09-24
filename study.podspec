@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint XCAsyncTestCase.podspec' to ensure this is a
+#  Be sure to run `pod spec lint study.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -16,20 +16,19 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "study"
-  s.version      = "0.2.0"
-  s.summary      = "Asynchronous capable XCTestCase subclass"
+  s.version      = "0.0.1"
+  s.summary      = "A short description of study."
 
-  s.homepage     = "https://github.com/aluoshuai/podtest"
-  s.license      = { :type => 'MIT', :file => 'LICENSE.txt' }
-  s.authors      = { "罗帅" => "5793348@qq.com" }
-  
-  s.source       = { :git => "https://github.com/aluoshuai/podtest.git", :tag => "0.2.0" }
-  s.source_files  = 'study/pod/**/*.{h,m}'
+  s.description  = <<-DESC
+                   A longer description of study in Markdown format.
 
-  s.platform     = :ios
-  s.ios.deployment_target = '5.0'
-  s.requires_arc = true
+                   * Think: Why did you write this? What is the focus? What does it do?
+                   * CocoaPods will be using this to generate tags, and improve search results.
+                   * Try to keep it short, snappy and to the point.
+                   * Finally, don't worry about the indent, CocoaPods strips it!
+                   DESC
 
+  s.homepage     = "http://EXAMPLE/study"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,7 +38,8 @@ Pod::Spec.new do |s|
   #  CocoaPods will detect a license file if there is a named LICENSE*
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
-  
+
+  s.license      = "MIT (example)"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -53,9 +53,10 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  # Or just: s.author    = "ChenYu Xiao"
-  # s.authors            = { "ChenYu Xiao" => "apple.iiiyu@gmail.com" }
-  # s.social_media_url   = "http://twitter.com/ChenYu Xiao"
+  s.author             = { "luoshuai" => "5793348@qq.com" }
+  # Or just: s.author    = "luoshuai"
+  # s.authors            = { "luoshuai" => "5793348@qq.com" }
+  # s.social_media_url   = "http://twitter.com/luoshuai"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -78,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  
+  s.source       = { :git => "http://EXAMPLE/study.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,17 +90,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  
-  # s.exclude_files = "Classes/Exclude"
-
-  # s.subspec 'UIKit' do |ss|
-  #   s.subspec.deployment_target = '6.0'
-  #   ss.ios.public_header_files = 'WTRequestCenter/UIKit+WTRequestCenter/*.h'
-  #   ss.dependency 'study'
-  #   ss.ios.source_files = 'study/UIKit+WTRequestCenter/*.{h,m}'
-  #   ss.osx.source_files = ''
-  #   end
-
+  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -124,7 +116,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.frameworks  = 'UIKit'
+  # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
