@@ -14,6 +14,8 @@
 		A05ED1511B73A82B00EE2801 /* studyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A05ED1501B73A82B00EE2801 /* studyTests.m */; };
 		A05ED15B1B73A93300EE2801 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A05ED15A1B73A93300EE2801 /* Default-568h@2x.png */; };
 		A05ED15E1B73ABD300EE2801 /* OneView.m in Sources */ = {isa = PBXBuildFile; fileRef = A05ED15D1B73ABD300EE2801 /* OneView.m */; };
+		A063024A1BB3998D00C5E696 /* podtest.m in Sources */ = {isa = PBXBuildFile; fileRef = A06302491BB3998D00C5E696 /* podtest.m */; settings = {ASSET_TAGS = (); }; };
+		A063024D1BB399A300C5E696 /* podtestviewontoller.m in Sources */ = {isa = PBXBuildFile; fileRef = A063024C1BB399A300C5E696 /* podtestviewontoller.m */; settings = {ASSET_TAGS = (); }; };
 		A06DF7EB1B7A3E1F0032348B /* ToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06DF7EA1B7A3E1F0032348B /* ToViewController.m */; };
 		A06DF7EE1B7A3EDF0032348B /* BaseAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = A06DF7ED1B7A3EDF0032348B /* BaseAnimator.m */; };
 /* End PBXBuildFile section */
@@ -43,6 +45,10 @@
 		A05ED15A1B73A93300EE2801 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A05ED15C1B73ABD300EE2801 /* OneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneView.h; sourceTree = "<group>"; };
 		A05ED15D1B73ABD300EE2801 /* OneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneView.m; sourceTree = "<group>"; };
+		A06302481BB3998D00C5E696 /* podtest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = podtest.h; sourceTree = "<group>"; };
+		A06302491BB3998D00C5E696 /* podtest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = podtest.m; sourceTree = "<group>"; };
+		A063024B1BB399A300C5E696 /* podtestviewontoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = podtestviewontoller.h; sourceTree = "<group>"; };
+		A063024C1BB399A300C5E696 /* podtestviewontoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = podtestviewontoller.m; sourceTree = "<group>"; };
 		A06DF7E91B7A3E1F0032348B /* ToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToViewController.h; sourceTree = "<group>"; };
 		A06DF7EA1B7A3E1F0032348B /* ToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToViewController.m; sourceTree = "<group>"; };
 		A06DF7EC1B7A3EDF0032348B /* BaseAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAnimator.h; sourceTree = "<group>"; };
@@ -70,6 +76,7 @@
 		A05ED1281B73A82B00EE2801 = {
 			isa = PBXGroup;
 			children = (
+				A06302461BB3997900C5E696 /* pod */,
 				A05ED15A1B73A93300EE2801 /* Default-568h@2x.png */,
 				A05ED1331B73A82B00EE2801 /* study */,
 				A05ED14D1B73A82B00EE2801 /* studyTests */,
@@ -129,6 +136,25 @@
 				A05ED14F1B73A82B00EE2801 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A06302461BB3997900C5E696 /* pod */ = {
+			isa = PBXGroup;
+			children = (
+				A06302471BB3997900C5E696 /* poda */,
+				A06302481BB3998D00C5E696 /* podtest.h */,
+				A06302491BB3998D00C5E696 /* podtest.m */,
+			);
+			path = pod;
+			sourceTree = "<group>";
+		};
+		A06302471BB3997900C5E696 /* poda */ = {
+			isa = PBXGroup;
+			children = (
+				A063024B1BB399A300C5E696 /* podtestviewontoller.h */,
+				A063024C1BB399A300C5E696 /* podtestviewontoller.m */,
+			);
+			path = poda;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +260,8 @@
 				A06DF7EE1B7A3EDF0032348B /* BaseAnimator.m in Sources */,
 				A05ED13D1B73A82B00EE2801 /* ViewController.m in Sources */,
 				A05ED15E1B73ABD300EE2801 /* OneView.m in Sources */,
+				A063024A1BB3998D00C5E696 /* podtest.m in Sources */,
+				A063024D1BB399A300C5E696 /* podtestviewontoller.m in Sources */,
 				A05ED13A1B73A82B00EE2801 /* AppDelegate.m in Sources */,
 				A05ED1371B73A82B00EE2801 /* main.m in Sources */,
 			);
